@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <table id="calculator">
+      <thead id="heading">CALCULATOR</thead><br>
+      <tbody>
+        <tr><td colspan="4"><input type="text" id="display"></td></tr>
+        <tr>
+          <td><input type="button" value="C" onclick="clearDisplay()"></td>
+          <td><input type="button" value="%" onclick="addDisplay('%')"></td>
+          <td><input type="button" value="<-" onclick="addDisplay('<-')"></td>
+          <td><input type="button" value="/" onclick="addDisplay('/')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="7" onclick="addDisplay('7')"></td>
+          <td><input type="button" value="8" onclick="addDisplay('8')"></td>
+          <td><input type="button" value="9" onclick="addDisplay('9')"></td>
+          <td><input type="button" value="*" onclick="addDisplay('*')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="4" onclick="addDisplay('4')"></td>
+          <td><input type="button" value="5" onclick="addDisplay('5')"></td>
+          <td><input type="button" value="6" onclick="addDisplay('6')"></td>
+          <td><input type="button" value="-" onclick="addDisplay('-')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="1" onclick="addDisplay('1')"></td>
+          <td><input type="button" value="2" onclick="addDisplay('2')"></td>
+          <td><input type="button" value="3" onclick="addDisplay('3')"></td>
+          <td><input type="button" value="+" onclick="addDisplay('+')"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="00" onclick="addDisplay('00')"></td>
+          <td><input type="button" value="0" onclick="addDisplay('0')"></td>
+          <td><input type="button" value="." onclick="addDisplay('.')"></td>
+          <td><input type="button" value="=" onclick="calculateResult()"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
+</html>

@@ -1,0 +1,25 @@
+.heading{
+  color: black;
+  font-size: bold;
+  text-align: center;
+}
+.calculator {
+  background-color: skyblue;
+  border: 1px solid white;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+input[type="button"]{
+  padding: 24px 28px;
+  background-color: #497D74;
+  color: #EFE9D5;
+  width: 100%;
+  font-size: bold;
+}
+input[type="text"]{
+  padding: 6px 12px;
+  background-color: white;
+  color: #27445D;
+  font-size: bold;
+  max-width: 500px;
+}
